@@ -2,11 +2,15 @@
     "name"         : "node-red-heroku",
     "version"      : "0.0.2",
     "dependencies": {
+        ""
+        "node-red-contrib-simple-message-queue": "~0.2.7",
+        "node-red-contrib-cron-plus": "~1.5.4",
+        "@node-red-contrib-themes/theme-collection": "~2.0.2",
         "when": "~3.x",
         "pg": "^8.3.0",
         "nano": "~5.11.0",
         "feedparser":"~0.19.2",
         "redis":"~0.10.1",
-        "node-red": "~1.x"
+        "node-red": "~2.0.5"
     }
 }
