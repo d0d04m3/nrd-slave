@@ -44,6 +44,44 @@ var settings = module.exports = {
     httpStatic: path.join(__dirname,"public"),
 
     functionGlobalContext: { },
+    functionExternalModules: true,
+    editorTheme: {
+        /** The following property can be used to set a custom theme for the editor.
+         * See https://github.com/node-red-contrib-themes/theme-collection for
+         * a collection of themes to chose from.
+         */
+        theme: "default",
+        palette: {
+            /** The following property can be used to order the categories in the editor
+             * palette. If a node's category is not in the list, the category will get
+             * added to the end of the palette.
+             * If not set, the following default order is used:
+             */
+            //categories: ['subflows', 'common', 'function', 'network', 'sequence', 'parser', 'storage'],
+        },
+        
+        codeEditor: {
+            /** Select the text editor component used by the editor.
+             * Defaults to "ace", but can be set to "ace" or "monaco"
+             */
+            lib: "monaco",
+            options: {
+                /** The follow options only apply if the editor is set to "monaco"
+                 *
+                 * theme - must match the file name of a theme in
+                 * packages/node_modules/@node-red/editor-client/src/vendor/monaco/dist/theme
+                 * e.g. "tomorrow-night", "upstream-sunburst", "github", "my-theme"
+                 */
+                theme: "hc-black",
+                /** other overrides can be set e.g. fontSize, fontFamily, fontLigatures etc.
+                 * for the full list, see https://microsoft.github.io/monaco-editor/api/interfaces/monaco.editor.istandaloneeditorconstructionoptions.html
+                 */
+                //fontSize: 14,
+                //fontFamily: "Cascadia Code, Fira Code, Consolas, 'Courier New', monospace",
+                //fontLigatures: true,
+            }
+        }
+    },
 
     storageModule: require("./pgstorage"),
 
