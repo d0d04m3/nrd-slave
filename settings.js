@@ -44,10 +44,7 @@ var settings = module.exports = {
     httpStatic: path.join(__dirname,"public"),
 
     functionGlobalContext: {
-    os:require('os'),
-    winston:require('winston'),
-    winstonPapertrailTransport:require('winston-papertrail-transport'),
-    winstonSyslog:require('winston-syslog')
+    
     
     
     },
