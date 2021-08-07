@@ -43,7 +43,17 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: { },
+    functionGlobalContext: {
+    os:require('os'),
+    winston:require('winston'),
+    winstonPapertrailTransport:require('winston-papertrail-transport'),
+    winstonSyslog:require('winston-syslog'),
+    winstonTimestampColorize:require('winston-timestamp-colorize'),
+    colo:require('colo'),
+    nodeConsoleColors:require('node-console-colors'),
+    utiljson:require('util')
+    
+    },
     functionExternalModules: true,
     editorTheme: {
         /** The following property can be used to set a custom theme for the editor.
