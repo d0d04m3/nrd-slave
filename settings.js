@@ -47,11 +47,8 @@ var settings = module.exports = {
     os:require('os'),
     winston:require('winston'),
     winstonPapertrailTransport:require('winston-papertrail-transport'),
-    winstonSyslog:require('winston-syslog'),
-    winstonTimestampColorize:require('winston-timestamp-colorize'),
-    colo:require('colo'),
-    nodeConsoleColors:require('node-console-colors'),
-    utiljson:require('util')
+    winstonSyslog:require('winston-syslog')
+    
     
     },
     functionExternalModules: true,
