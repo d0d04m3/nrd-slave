@@ -6,6 +6,8 @@
         "winston-telegram": "~2.3.5",
         "winston-papertrail-transport":"~1.0.9",
         "winston-syslog":"~2.4.4",
+        "node-console-colors":"~1.1.4",
+        "node-red-contrib-postgresql":"~0.2.1",
         "colo":"~1.0.0",
         "color":"~4.0.1",
         "node-red-contrib-simple-message-queue": "~0.2.7",
