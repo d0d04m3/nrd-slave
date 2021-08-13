@@ -12,6 +12,8 @@
         "color":"~4.0.1",
         "node-red-contrib-simple-message-queue": "~0.2.7",
         "node-red-contrib-cron-plus": "~1.5.4",
+        "node-red-contrib-timeout": "~1.1.5",
+        "node-red-contrib-uuid":"~0.0.4",
         "@node-red-contrib-themes/theme-collection": "~2.0.2",
         "when": "~3.x",
         "pg": "^8.3.0",
